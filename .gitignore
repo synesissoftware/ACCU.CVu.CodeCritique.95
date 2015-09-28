@@ -5,6 +5,8 @@
 
 # files (by name)
 
+programs/cc95/main
+
 # files (by pattern)
 
 *~
