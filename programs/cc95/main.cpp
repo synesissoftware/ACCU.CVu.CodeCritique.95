@@ -22,7 +22,7 @@ void to_string(Score const* scores, size_t n,
 	}
 }
 
-void process(char buffer[])
+void process(char* buffer, size_t len)
 {
 	Score const sc[] = {
 		{ "Roger", 10 },
@@ -30,14 +30,14 @@ void process(char buffer[])
 		{ "Wilbur", 12 },
 	};
 	to_string(sc, ARRAY_SZ(sc),
-		buffer, ARRAY_SZ(buffer));
+		buffer, len);
 }
 
 int main()
 {
 	char buffer[100];
 
-	process(buffer);
+	process(buffer, ARRAY_SZ(buffer));
 	printf(buffer);
 }
 
