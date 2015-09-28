@@ -3,6 +3,11 @@
 
 #include <stdio.h>
 
+#if defined(_MSC_VER)
+# define snprintf _snprintf
+#endif
+
+
 #define ARRAY_SZ(x) STLSOFT_NUM_ELEMENTS(x)
 
 typedef struct _Score
