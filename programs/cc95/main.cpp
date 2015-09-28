@@ -1,7 +1,9 @@
 
+#include <stlsoft/stlsoft.h>
+
 #include <stdio.h>
 
-#define ARRAY_SZ(x) sizeof(x)/sizeof(x[0])
+#define ARRAY_SZ(x) STLSOFT_NUM_ELEMENTS(x)
 
 typedef struct _Score
 {
