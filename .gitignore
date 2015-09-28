@@ -1,32 +1,36 @@
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
 
-# Precompiled Headers
-*.gch
-*.pch
+# directories (by name)
 
-# Libraries
-*.lib
+# directories (by pattern)
+
+# files (by name)
+
+# files (by pattern)
+
+*~
 *.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
 *.app
-*.i*86
-*.x86_64
-*.hex
+*.dll
+*.dylib
+*.exe
+*.gch
+*.ilk
+*.lib
+*.log
+*.ncb
+*.o
+*.obj
+*.opensdf
+*.opt
+*.out
+*.pch
+*.pdb
+*.sdf
+*.sbr
+*.scc
+*.so
+*.suo
+*.swp
+*.vcproj*.user
+*.vcxproj*.user
 
-# Debug files
-*.dSYM/
