@@ -5,11 +5,11 @@
 
 typedef struct _Score
 {
-	char *name;
-	int score;
+	char const*	name;
+	int			score;
 } Score;
 
-void to_string(Score *scores, size_t n,
+void to_string(Score const* scores, size_t n,
 		  char *buffer, size_t len)
 {
 	for (size_t i = 0; i < n; i++)
@@ -24,7 +24,7 @@ void to_string(Score *scores, size_t n,
 
 void process(char buffer[])
 {
-	Score sc[] = {
+	Score const sc[] = {
 		{ "Roger", 10 },
 		{ "Bill", 5 },
 		{ "Wilbur", 12 },
